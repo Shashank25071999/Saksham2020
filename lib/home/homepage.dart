@@ -9,12 +9,8 @@ class Home extends StatelessWidget{
       child: Scaffold(
          backgroundColor: Colors.black,
          body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/bckgrnd.jpeg"),
-            fit: BoxFit.cover,
-          ),
-        ),
+       
+         
         child: null /* add child content here */,
       ),
      
