@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Stories extends StatelessWidget {
-  
+ 
+
 
   final stories = Expanded(
     child: new Padding(
@@ -16,7 +17,37 @@ class Stories extends StatelessWidget {
                   children: <Widget>[
                     GestureDetector(
                       onTap: (){
-                        print('rg');
+                         showGeneralDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: MaterialLocalizations.of(context)
+          .modalBarrierDismissLabel,
+      barrierColor: Colors.black45,
+      transitionDuration: const Duration(milliseconds: 600),
+      pageBuilder: (BuildContext buildContext,
+      
+          Animation animation,
+          Animation secondaryAnimation) {
+        return Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width - 70,
+            height: MediaQuery.of(context).size.height - 420,
+            
+            color: Colors.white,
+            child: Column(
+              children: [
+                Container(child: Image.asset('assets/riya.jpeg',fit: BoxFit.fill),
+                width:MediaQuery.of(context).size.width - 70 ,
+                height: MediaQuery.of(context).size.height - 420,
+                ),
+                
+              ],
+            ),
+          ),
+        );
+      });
+                     print('rg');
+
                       },
                                           child: new Container(
                         width: 70.0,
@@ -27,7 +58,7 @@ class Stories extends StatelessWidget {
                           
                           image: new DecorationImage(
                               fit: BoxFit.fill,
-                              image: AssetImage('assets/cricket.jpeg')),
+                              image: AssetImage('assets/riya.jpeg')),
                         ),
                         margin: const EdgeInsets.all(8),
                       ),
@@ -58,4 +89,8 @@ class Stories extends StatelessWidget {
       ),
     );
   }
+
+  
+     
+
 }

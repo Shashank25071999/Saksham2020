@@ -20,10 +20,6 @@ dependencies:
   flutter:
     sdk: flutter
   curved_drawer:
-  flutter_instagram_stories:
-  firebase_core:
-  firebase_auth:
-  cloud_firestore:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -65,6 +61,7 @@ flutter:
   - assets/tugofwar.jpeg
   - assets/volleyball.jpeg
   - assets/saksham.jpeg
+  - assets/riya.jpeg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
