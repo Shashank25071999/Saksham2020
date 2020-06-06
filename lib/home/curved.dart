@@ -94,8 +94,10 @@ String title;
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(appBar: AppBar(
-                  title: Text(title),
-                  backgroundColor: Color.fromRGBO(128, 0, 0, 50),
+                  title: Padding(padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/5,top: MediaQuery.of(context).size.width/20),child: Text(title,style: TextStyle(fontSize:22),)),
+                  shape: MyShapeBorder(20),
+                  backgroundColor: Color.fromRGBO(128, 0, 0,1),
+                  
                   leading: Builder(
         builder: (context) => IconButton(
             icon: new Icon(Icons.menu),
@@ -106,4 +108,43 @@ String title;
                 drawer: Stack(children:[ CurvedDrawer(items: listpages,index:selectedIndex)]),
                 body:abc[selectedIndex]);
   }
+}
+
+class CustomShapeBorder extends ContinuousRectangleBorder {
+  @override
+  Path getOuterPath(Rect rect, {TextDirection textDirection}) {
+
+    final double innerCircleRadius = 150.0;
+
+    Path path = Path();
+    path.lineTo(0, rect.height);
+    path.quadraticBezierTo(rect.width / 2 - (innerCircleRadius / 2) - 30, rect.height + 15, rect.width / 2 - 75, rect.height + 50);
+    path.cubicTo(
+        rect.width / 2 - 40, rect.height + innerCircleRadius - 40,
+        rect.width / 2 + 40, rect.height + innerCircleRadius - 40,
+        rect.width / 2 + 75, rect.height + 50
+    );
+    path.quadraticBezierTo(rect.width / 2 + (innerCircleRadius / 2) + 30, rect.height + 15, rect.width, rect.height);
+    path.lineTo(rect.width, 0.0);
+    path.close();
+
+    return path;
+  }
+}
+
+class MyShapeBorder extends ContinuousRectangleBorder {
+  const MyShapeBorder(this.curveHeight);
+  final double curveHeight;
+
+  @override
+  Path getOuterPath(Rect rect, {TextDirection textDirection}) => Path()
+    ..lineTo(0, rect.size.height)
+    ..quadraticBezierTo(
+      rect.size.width / 2,
+      rect.size.height + curveHeight * 2,
+      rect.size.width,
+      rect.size.height,
+    )
+    ..lineTo(rect.size.width, 0)
+    ..close();
 }
