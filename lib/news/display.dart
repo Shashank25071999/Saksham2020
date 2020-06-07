@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:saksham/news/story.dart';
 
 class Display extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     var deviceSize = MediaQuery.of(context).size;
