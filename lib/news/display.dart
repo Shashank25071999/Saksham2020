@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:saksham/news/story.dart';
 
 class Display extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     var deviceSize = MediaQuery.of(context).size;
@@ -80,7 +81,7 @@ class Display extends StatelessWidget {
                                               Padding(
                                                 padding: EdgeInsets.all(9),
                                                 child: Text(
-                                                    'BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll.'),
+                                                    'BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time'),
                                               )
                                             ]),
                                           ),

@@ -4,99 +4,164 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Items {
 String title;
-
+List <String>icon;
 String img;
-Items({this.title, this.img});
+
+Items({this.title, this.img, this.icon});
 }
-List <Items> items = [
+List  items = [
   Items(
 title: 'BDCoE',
 img: "assets/bdcoe.jpg",
-
+icon: ['assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/bdcoe.jpg',
+'assets/tugofwar.jpeg',
+"assets/basketball.jpeg"
+]
 ),
 Items(
 title: 'Cricket',
 img: "assets/cricket.jpeg",
-
+icon:['assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/cricket.jpeg',]
 ),
 Items (
 title:'Football',
 img: "assets/football.jpeg",
-
+icon:[
+  
+'assets/saksham.jpeg',
+'assets/football.jpeg',
+'assets/riya.jpeg',
+]
 ),
 Items (
 title:'Basketball',
 img:"assets/basketball.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/basketball.jpeg',
+]
 ),
 Items (
 title:'Kabaddi',
 img: "assets/kabaddi.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/kabaddi.jpeg',
+]
 ),
 Items(
 title: 'Table Tennis',
 img: "assets/tabletennis.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/tabletennis.jpeg',
+]
 ),
 Items(
 title: 'Athletics',
 img: "assets/athletics.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/athletics.jpeg',
+]
 ),
 Items(
 title: 'Badminton',
-img: "assets/badminton.jpeg"
+img: "assets/badminton.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/badminton.jpeg',
+]
 ),
 Items(
 title: 'Power Lifting',
-img: "assets/powerlifting.jpeg"
+img: "assets/powerlifting.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/powerlifting.jpeg',
+]
 ),
 Items(
 title: 'Carrom',
 img: "assets/carrom.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/carrom.jpeg',
+]
 ),
 Items(
 title: 'Chess',
 img: "assets/chess.jpeg",
-
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/chess.jpeg',
+]
 ),
 Items(
 title: 'Tug of War',
-img: "assets/tugofwar.jpeg"
+img: "assets/tugofwar.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/tugofwar.jpeg',
+]
 ),
 Items(
 title: 'Pool',
-img: "assets/pool.jpeg"
+img: "assets/pool.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/pool.jpeg',
+]
 ),
 Items(
 title: 'Volleyball',
-img: "assets/volleyball.jpeg"
+img: "assets/volleyball.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/volleyball.jpeg',
+]
 ),
 Items(
 title: 'Kho Kho',
-img: "assets/khokho.jpeg"
+img: "assets/khokho.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/khokho.jpeg',
+]
 ),
 Items(
 title: 'Obstacle Race',
-img: "assets/obstaclerace.jpeg"
+img: "assets/obstaclerace.jpeg",
+icon:[
+  'assets/riya.jpeg',
+'assets/saksham.jpeg',
+'assets/football.jpeg',
+]
 ),
 ];
 
 
 class Stories extends StatelessWidget {
-  
- 
- 
+
   @override
   Widget build(BuildContext context) {
-  final List imgList = [
-'assets/riya.jpeg',
-'assets/saksham.jpeg',
-'assets/bdcoe.jpg',
 
-];
 
 
  
@@ -113,7 +178,7 @@ class Stories extends StatelessWidget {
       padding: const EdgeInsets.only(top: 8.0),
       child: new ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 16,
+        itemCount: items.length,
         itemBuilder: (context, index) => new Stack(
           alignment: Alignment.bottomRight,
           children: <Widget>[
@@ -129,7 +194,7 @@ class Stories extends StatelessWidget {
       barrierLabel: MaterialLocalizations.of(context)
           .modalBarrierDismissLabel,
       barrierColor: Colors.black45,
-      transitionDuration: const Duration(milliseconds: 600),
+      transitionDuration: const Duration(milliseconds: 700),
           
       pageBuilder: (BuildContext buildContext,
       
@@ -147,13 +212,14 @@ class Stories extends StatelessWidget {
             child: Column(
               children: [
                 Container(child: new Swiper(
-  itemBuilder: (BuildContext context, int index) {
+  itemBuilder: (BuildContext context, int index1) {
+    
     return new Image.asset(
-      imgList[index],
+      items[index].icon[index1],
       fit: BoxFit.fill,
     );
   },
-  itemCount: 3,
+  itemCount: items[index].icon.length,
   viewportFraction: 0.8,
   scale: 0.9,
 ),
@@ -169,7 +235,8 @@ class Stories extends StatelessWidget {
       }
       
       );
-                     print('rg');
+      print('rg');
+                     print('rg1');
 
                       },
                     child: Card(
