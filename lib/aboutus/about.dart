@@ -8,9 +8,9 @@ class AboutUs extends StatelessWidget{
     return Container(
       child: Scaffold(
          backgroundColor: Colors.black,
-        
+     
+     
     )
     );
   }
-
 }
