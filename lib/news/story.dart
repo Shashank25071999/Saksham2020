@@ -13,7 +13,8 @@ List  items = [
   Items(
 title: 'BDCoE',
 img: "assets/bdcoe.jpg",
-icon: ['assets/riya.jpeg',
+icon: [
+'assets/riya.jpeg',
 'assets/saksham.jpeg',
 'assets/bdcoe.jpg',
 'assets/tugofwar.jpeg',
@@ -23,9 +24,11 @@ icon: ['assets/riya.jpeg',
 Items(
 title: 'Cricket',
 img: "assets/cricket.jpeg",
-icon:['assets/riya.jpeg',
+icon:[
+'assets/riya.jpeg',
 'assets/saksham.jpeg',
-'assets/cricket.jpeg',]
+'assets/cricket.jpeg',
+]
 ),
 Items (
 title:'Football',
