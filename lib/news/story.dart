@@ -127,19 +127,19 @@ class Stories extends StatelessWidget {
       barrierLabel: MaterialLocalizations.of(context)
           .modalBarrierDismissLabel,
       barrierColor: Colors.black45,
-      transitionDuration: const Duration(milliseconds: 600),
+      transitionDuration: const Duration(milliseconds: 700),
           
       pageBuilder: (BuildContext buildContext,
       
           Animation animation,
           Animation secondaryAnimation) {
-            Future.delayed(Duration(seconds: 8), () {
-                          Navigator.of(context).pop(true);
-                        });
+            // Future.delayed(Duration(seconds: 8), () {
+            //               Navigator.of(buildContext).pop(true);
+            //             });
         return Center(
           child: Container(
-            width: MediaQuery.of(context).size.width - 70,
-            height: MediaQuery.of(context).size.height - 420,
+            width: MediaQuery.of(buildContext).size.width - 70,
+            height: MediaQuery.of(buildContext).size.height - 420,
             
             color: Colors.white,
             child: Column(
@@ -155,8 +155,8 @@ class Stories extends StatelessWidget {
   viewportFraction: 0.8,
   scale: 0.9,
 ),
-                width:MediaQuery.of(context).size.width - 70 ,
-                height: MediaQuery.of(context).size.height - 420,
+                width:MediaQuery.of(buildContext).size.width - 70 ,
+                height: MediaQuery.of(buildContext).size.height - 420,
                 ),
                 
               ],
@@ -167,7 +167,8 @@ class Stories extends StatelessWidget {
       }
       
       );
-                     print('rg');
+      print('rg');
+                     print('rg1');
 
                       },
                     child: Card(
