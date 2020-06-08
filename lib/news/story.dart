@@ -105,21 +105,6 @@ class Stories extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-<<<<<<< HEAD
-        
-         Expanded(
-    child: new Padding(
-      padding: const EdgeInsets.only(top: 8.0),
-      child: new ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: items.length,
-        itemBuilder: (context, index) => new Stack(
-          alignment: Alignment.bottomRight,
-          children: <Widget>[
-            Column(
-              children: <Widget>[
-                Column(
-=======
           Expanded(
             child: new Padding(
               padding: const EdgeInsets.only(top: 8.0),
@@ -128,7 +113,6 @@ class Stories extends StatelessWidget {
                 itemCount: items.length,
                 itemBuilder: (context, index) => new Stack(
                   alignment: Alignment.bottomRight,
->>>>>>> 25f47cfec217a8467575f46527535d0a1ee07807
                   children: <Widget>[
                     Column(
                       children: <Widget>[
@@ -237,20 +221,9 @@ class Stories extends StatelessWidget {
                 ),
               ),
             ),
-<<<<<<< HEAD
-          ],
-        )],
-        )
-    ),
-  ),
-         ),
-        ]
-          ),
-=======
           ),
         ],
       ),
->>>>>>> 25f47cfec217a8467575f46527535d0a1ee07807
     );
   }
 }

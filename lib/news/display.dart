@@ -121,16 +121,6 @@ class Display extends StatelessWidget {
                                                     fontWeight:
                                                         FontWeight.bold),
                                               ),
-<<<<<<< HEAD
-                                              SizedBox(height: 15),
-                                              Padding(
-                                                padding: EdgeInsets.all(9),
-                                                child: Text(
-                                                    'BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time BDCoE launches Saksham 2k19 app.Check daily for latest news, schedule and medal tally. You can also participate in poll. All the participant has to register to the event through the app which is going to live at the end of the evening thank you for your precious time'),
-                                              )
-                                            ]),
-                                          ),
-=======
                                             ),
                                             SizedBox(height: 15),
                                             Padding(
@@ -142,7 +132,6 @@ class Display extends StatelessWidget {
                                                   
                                             )
                                           ]),
->>>>>>> 25f47cfec217a8467575f46527535d0a1ee07807
                                         ),
                                       ),
                                     ),

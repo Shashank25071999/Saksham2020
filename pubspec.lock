@@ -129,10 +129,7 @@ packages:
       name: image
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.1.12"
-=======
-    version: "2.1.4"
   intl:
     dependency: transitive
     description:
@@ -140,7 +137,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.16.1"
->>>>>>> 25f47cfec217a8467575f46527535d0a1ee07807
   matcher:
     dependency: transitive
     description:
@@ -169,8 +165,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.6.4"
-<<<<<<< HEAD
-=======
   path_provider:
     dependency: transitive
     description:
@@ -206,7 +200,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0+1"
->>>>>>> 25f47cfec217a8467575f46527535d0a1ee07807
   petitparser:
     dependency: transitive
     description:
@@ -295,7 +288,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.11"
+    version: "0.2.15"
   transformer_page_view:
     dependency: transitive
     description:
@@ -332,5 +325,5 @@ packages:
     source: hosted
     version: "3.6.1"
 sdks:
-  dart: ">=2.5.0 <3.0.0"
+  dart: ">=2.6.0 <3.0.0"
   flutter: ">=1.12.13+hotfix.5 <2.0.0"
