@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-
+import 'package:google_fonts/google_fonts.dart';
 
 class DrawerNavItem extends StatelessWidget {
   final Icon icon;
@@ -13,7 +12,7 @@ class DrawerNavItem extends StatelessWidget {
       {Key key,
       @required this.icon,
       this.label,
-      this.size = 35.0,
+      this.size = 30.0,
       this.color = Colors.white,
       this.background = Colors.white})
       : super(key: key);
@@ -36,7 +35,8 @@ class DrawerNavItem extends StatelessWidget {
                   SizedBox(width: 5),
                   Text(
                     label,
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    style: GoogleFonts.crimsonText(
+                        color: Colors.black, fontWeight: FontWeight.bold,fontSize: 15),
                   ),
                 ]
               : <Widget>[
@@ -48,8 +48,6 @@ class DrawerNavItem extends StatelessWidget {
   }
 }
 
-
-
 class NavButton extends StatelessWidget {
   final double position;
   final int length;
@@ -59,8 +57,6 @@ class NavButton extends StatelessWidget {
   final Color color;
   final ValueChanged<int> onTap;
   final Icon icon;
-
- 
 
   NavButton(
       {this.onTap,
