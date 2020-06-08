@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'dart:async';
+
 class Schedule extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -7,7 +8,6 @@ class Schedule extends StatefulWidget {
     return ScheduleState();
   }
 }
-
 
 class ShowUp extends StatefulWidget {
   final Widget child;
@@ -62,7 +62,6 @@ class _ShowUpState extends State<ShowUp> with TickerProviderStateMixin {
   }
 }
 
-
 class ScheduleState extends State<Schedule> {
   int delayAmount = 500;
   @override
@@ -71,173 +70,624 @@ class ScheduleState extends State<Schedule> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  SizedBox(height: 12.0,),
-                  Row(
-                    children: <Widget>[
-                      
-                      Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/cricket.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/football.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/basketball.jpeg")
-                              ,))
-                    ],
-                  ),
-                  Row(children: <Widget>[
-                    Expanded(child: ShowUp(child: Text("Cricket",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount, ),),
-                    Expanded(child: ShowUp(child: Text("Football",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount, ),),
-                     Expanded(child: ShowUp(child: Text("Basketball",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount, ),),
-                  ],),
-                  SizedBox(height: 12.0,),
-                  Row(
-                    children: <Widget>[
-                      
-                      Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/kabaddi.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/tabletennis.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/athletics.jpeg")
-                              ,))
-                    ],
-                  ),
-                  Row(children: <Widget>[
-                     Expanded(child: ShowUp(child: Text("Kabaddi",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+100, ),),
-                    Expanded(child: ShowUp(child: Text("Table Tennis",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+100, ),),
-                   Expanded(child: ShowUp(child: Text("Athletics",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+100, ),),
-                  ],),
-                   SizedBox(height: 12.0,),
-                  Row(
-                    children: <Widget>[
-                      
-                      Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/badminton.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/powerlifting.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/carrom.jpeg")
-                              ,))
-                    ],
-                  ),
-                  Row(children: <Widget>[
-       Expanded(child: ShowUp(child: Text("Badminton",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+200, ),),
-                    Expanded(child: ShowUp(child: Text("Powerlifting",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+200, ),),
-                   Expanded(child: ShowUp(child: Text("Carrom",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+200, ),),
-                  ],),
-                  SizedBox(height: 12.0,),
-                  Row(
-                    children: <Widget>[
-                      
-                      Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/chess.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/tugofwar.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/pool.jpeg")
-                              ,))
-                    ],
-                  ),
-                  Row(children: <Widget>[
-                  Expanded(child: ShowUp(child: Text("Chess",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+300, ),),
-                 Expanded(child: ShowUp(child: Text("Tug of War",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+300, ),),
-               Expanded(child: ShowUp(child: Text("Pool",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+300, ),),
-                  ],),
-                   SizedBox(height: 12.0,),
-                  Row(
-                    children: <Widget>[
-                      
-                      Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/khokho.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/volleyball.jpeg")
-                              ,)),
-                               Expanded(
-                          child: GestureDetector(onTap: (){
-                            print("rg");
-                          },
-                              child: Image.asset("assets/obstaclerace.jpeg")
-                              ,))
-                    ],
-                  ),
-                  Row(children: <Widget>[
-                 Expanded(child: ShowUp(child: Text("Kho Kho",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+400, ),),
-                 Expanded(child: ShowUp(child: Text("Volleyball",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+400, ),),
-                 Expanded(child: ShowUp(child: Text("Obstacle Race",textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
-                    delay: delayAmount+400, ),),
-                  ],),
-                  SizedBox(height: 12.0,),
-                  
-                ],
-              ),
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              height: 12.0,
             ),
-         );
+            Row(
+              children: <Widget>[
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Cricket")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/cricket.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Football")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/football.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Basketball")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/basketball.jpeg"),
+                ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Cricket",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Football",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Basketball",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Kabaddi")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/kabaddi.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Table Tennis")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/tabletennis.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Athletics")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/athletics.jpeg"),
+                ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Kabaddi",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 100,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Table Tennis",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 100,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Athletics",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 100,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Badminton")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/badminton.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Powerlifting")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/powerlifting.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Carrom")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/carrom.jpeg"),
+                ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Badminton",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 200,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Powerlifting",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 200,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Carrom",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 200,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Chess")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/chess.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("TugofWar")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/tugofwar.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Pool")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/pool.jpeg"),
+                ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Chess",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 300,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Tug of War",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 300,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Pool",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 300,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Kho Kho")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/khokho.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Volleyball")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/volleyball.jpeg"),
+                )),
+                Expanded(
+                    child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                        context: context,
+                        builder: (builder) {
+                          return new Container(
+                            height: 750.0,
+                            color: Colors
+                                .black, //could change this to Color(0xFF737373),
+                            //so you don't have to change MaterialApp canvasColor
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0),
+                                        topRight: const Radius.circular(30.0))),
+                                child: new Center(
+                                  child: SingleChildScrollView(
+                                      child: new Text("Obstacle Race")),
+                                )),
+                          );
+                        });
+                    print("rg");
+                  },
+                  child: Image.asset("assets/obstaclerace.jpeg"),
+                ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Kho Kho",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 400,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Volleyball",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 400,
+                  ),
+                ),
+                Expanded(
+                  child: ShowUp(
+                    child: Text(
+                      "Obstacle Race",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    delay: delayAmount + 400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

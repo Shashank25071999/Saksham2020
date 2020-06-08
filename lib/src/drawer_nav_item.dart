@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class DrawerNavItem extends StatelessWidget {
   final Icon icon;
   final String label;
@@ -36,7 +34,8 @@ class DrawerNavItem extends StatelessWidget {
                   SizedBox(width: 5),
                   Text(
                     label,
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ]
               : <Widget>[
@@ -48,8 +47,6 @@ class DrawerNavItem extends StatelessWidget {
   }
 }
 
-
-
 class NavButton extends StatelessWidget {
   final double position;
   final int length;
@@ -59,8 +56,6 @@ class NavButton extends StatelessWidget {
   final Color color;
   final ValueChanged<int> onTap;
   final Icon icon;
-
- 
 
   NavButton(
       {this.onTap,

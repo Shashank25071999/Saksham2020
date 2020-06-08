@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
-
-class AboutUs extends StatelessWidget{
+class AboutUs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      child: Scaffold(
-         backgroundColor: Colors.black,
-     
-     
-    )
-    );
+        child: Scaffold(
+      backgroundColor: Colors.black,
+    ));
   }
 }
