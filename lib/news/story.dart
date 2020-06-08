@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Items {
   String title;
@@ -11,59 +12,59 @@ class Items {
 
 List items = [
   Items(title: 'BDCoE', img: "assets/bdcoe.jpg", icon: [
-    'assets/riya.jpeg',
+    'assets/chess.jpeg',
     'assets/saksham.jpeg',
     'assets/bdcoe.jpg',
     'assets/tugofwar.jpeg',
     "assets/basketball.jpeg"
   ]),
   Items(title: 'Cricket', img: "assets/cricket.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/badminton.jpeg',
     'assets/saksham.jpeg',
     'assets/cricket.jpeg',
   ]),
   Items(title: 'Football', img: "assets/football.jpeg", icon: [
     'assets/saksham.jpeg',
     'assets/football.jpeg',
-    'assets/riya.jpeg',
+    'assets/cricket.jpeg',
   ]),
   Items(title: 'Basketball', img: "assets/basketball.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/volleyball.jpeg',
     'assets/saksham.jpeg',
     'assets/basketball.jpeg',
   ]),
   Items(title: 'Kabaddi', img: "assets/kabaddi.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/tabletennis.jpeg',
     'assets/saksham.jpeg',
     'assets/kabaddi.jpeg',
   ]),
   Items(title: 'Table Tennis', img: "assets/tabletennis.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/kabaddi.jpeg',
     'assets/saksham.jpeg',
     'assets/tabletennis.jpeg',
   ]),
   Items(title: 'Athletics', img: "assets/athletics.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/obstaclerace.jpeg',
     'assets/saksham.jpeg',
     'assets/athletics.jpeg',
   ]),
   Items(title: 'Badminton', img: "assets/badminton.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/athletics.jpeg',
     'assets/saksham.jpeg',
     'assets/badminton.jpeg',
   ]),
-  Items(title: 'Power Lifting', img: "assets/powerlifting.jpeg", icon: [
-    'assets/riya.jpeg',
+  Items(title: 'Powerlifting', img: "assets/powerlifting.jpeg", icon: [
+    'assets/carrom.jpeg',
     'assets/saksham.jpeg',
     'assets/powerlifting.jpeg',
   ]),
   Items(title: 'Carrom', img: "assets/carrom.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/pool.jpeg',
     'assets/saksham.jpeg',
     'assets/carrom.jpeg',
   ]),
   Items(title: 'Chess', img: "assets/chess.jpeg", icon: [
-    'assets/riya.jpeg',
+    'assets/powerlifting.jpeg',
     'assets/saksham.jpeg',
     'assets/chess.jpeg',
   ]),
@@ -212,7 +213,7 @@ class Stories extends StatelessWidget {
                         SizedBox(height: 3),
                         Text(
                           items[index].title,
-                          style: TextStyle(color: Colors.white),
+                          style: GoogleFonts.crimsonText(color: Colors.white),
                         ),
                       ],
                     ),

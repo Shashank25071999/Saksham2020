@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import 'dart:async';
 
+import 'package:google_fonts/google_fonts.dart';
+
 class Schedule extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -85,19 +87,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Cricket")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Cricket',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -112,19 +190,94 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Football")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Football',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26, color: Colors.red[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -139,19 +292,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Basketball")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Basketball',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -167,7 +396,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Cricket",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount,
                   ),
@@ -177,7 +406,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Football",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount,
                   ),
@@ -187,7 +416,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Basketball",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount,
                   ),
@@ -207,19 +436,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Kabaddi")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Kabaddi',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[400]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -234,19 +539,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Table Tennis")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Table Tennis',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.green[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -261,19 +642,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Athletics")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Athletics',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[500]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -289,7 +746,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Kabaddi",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 100,
                   ),
@@ -299,7 +756,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Table Tennis",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 100,
                   ),
@@ -309,7 +766,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Athletics",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 100,
                   ),
@@ -329,19 +786,94 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Badminton")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Badminton',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26, color: Colors.red[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -356,19 +888,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Powerlifting")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Powerlifting',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.green[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -383,19 +991,94 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Carrom")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Carrom',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26, color: Colors.red[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -411,7 +1094,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Badminton",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 200,
                   ),
@@ -421,7 +1104,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Powerlifting",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 200,
                   ),
@@ -431,7 +1114,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Carrom",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 200,
                   ),
@@ -451,19 +1134,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Chess")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Chess',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -478,19 +1237,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("TugofWar")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Tug of War',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[500]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -505,19 +1340,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Pool")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Pool',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.green[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -533,7 +1444,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Chess",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 300,
                   ),
@@ -543,7 +1454,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Tug of War",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 300,
                   ),
@@ -553,7 +1464,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Pool",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 300,
                   ),
@@ -573,19 +1484,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Kho Kho")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Kho Kho',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -600,19 +1587,94 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Volleyball")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Volleyball',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26, color: Colors.red[800]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -627,19 +1689,95 @@ class ScheduleState extends State<Schedule> {
                         builder: (builder) {
                           return new Container(
                             height: 750.0,
-                            color: Colors
-                                .black, //could change this to Color(0xFF737373),
-                            //so you don't have to change MaterialApp canvasColor
+                            color: Colors.black,
                             child: new Container(
-                                decoration: new BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0),
-                                        topRight: const Radius.circular(30.0))),
-                                child: new Center(
-                                  child: SingleChildScrollView(
-                                      child: new Text("Obstacle Race")),
-                                )),
+                              decoration: new BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
+                                      topRight: const Radius.circular(30.0))),
+                              child: Column(children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.all(15),
+                                  child: Center(
+                                    child: Text(
+                                      'Obstacle Race',
+                                      style: GoogleFonts.crimsonText(
+                                          fontSize: 26,
+                                          color: Colors.deepPurple[500]),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    itemCount: 1,
+                                    itemBuilder:
+                                        (BuildContext ctxt, int index) =>
+                                            Padding(
+                                      padding: EdgeInsets.all(6),
+                                      child: Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Center(
+                                                child: Text('Boys',
+                                                    style: GoogleFonts.crimsonText(
+                                                        fontSize: 20))),
+                                            Padding(
+                                              padding: EdgeInsets.all(5),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      'IT v/s CSE',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.black,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '05 Sept',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10,
+                                                        bottom: 10,
+                                                        left: 20,
+                                                        right: 20),
+                                                    child: Text(
+                                                      '4:00',
+                                                      style: GoogleFonts.crimsonText(
+                                                          color: Colors.grey,
+                                                          fontSize: 20),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ]),
+                            ),
                           );
                         });
                     print("rg");
@@ -655,7 +1793,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Kho Kho",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 400,
                   ),
@@ -665,7 +1803,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Volleyball",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 400,
                   ),
@@ -675,7 +1813,7 @@ class ScheduleState extends State<Schedule> {
                     child: Text(
                       "Obstacle Race",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.white),
+                      style: GoogleFonts.crimsonText(color: Colors.white,fontSize: 16),
                     ),
                     delay: delayAmount + 400,
                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:saksham/news/story.dart';
 
 class Value {
@@ -20,7 +21,7 @@ List values = [
   Value(
       heading: 'What a great match!',
       teams: 'CS v/s ME',
-      image: 'assets/riya.jpeg',
+      image: 'assets/chess.jpeg',
       description:
           'qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnmqwertyuioplkjhgfdsazxcvbnmlkjhgfdsaqwertyuioplkjhgfdsazxcvbnmlkjhgfdsaqwert'),
   Value(
@@ -114,9 +115,9 @@ class Display extends StatelessWidget {
                                             Center(
                                               child: Text(
                                                 values[index].teams,
-                                                style: TextStyle(
+                                                style: GoogleFonts.crimsonText(
                                                     color: Colors.black,
-                                                    fontSize: 20,
+                                                    fontSize: 23,
                                                     fontWeight:
                                                         FontWeight.bold),
                                               ),
@@ -125,7 +126,10 @@ class Display extends StatelessWidget {
                                             Padding(
                                               padding: EdgeInsets.all(9),
                                               child: Text(
-                                                  values[index].description),
+                                                  values[index].description,
+                                                  style: GoogleFonts.crimsonText(fontSize:15),
+                                                  ),
+                                                  
                                             )
                                           ]),
                                         ),
@@ -146,7 +150,7 @@ class Display extends StatelessWidget {
                                           label: Text(
                                             "Close",
                                             style:
-                                                TextStyle(color: Colors.white),
+                                                GoogleFonts.crimsonText(color: Colors.white,fontSize:16),
                                           ),
                                           foregroundColor: Colors.black,
                                           backgroundColor: Colors.black,
@@ -196,7 +200,7 @@ class Display extends StatelessWidget {
                                   ),
                                   new Text(
                                     "Saksham",
-                                    style: TextStyle(
+                                    style: GoogleFonts.crimsonText(
                                         fontSize: 17,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white),
@@ -231,8 +235,8 @@ class Display extends StatelessWidget {
                           child: Center(
                             child: Text(
                               values[index].heading,
-                              style: TextStyle(
-                                  fontSize: 15,
+                              style: GoogleFonts.crimsonText(
+                                  fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                             ),
@@ -243,9 +247,12 @@ class Display extends StatelessWidget {
                               top: 5, bottom: 5, left: 16, right: 16),
                           child: Text(
                             values[index].teams,
-                            style: TextStyle(
-                                // fontWeight: FontWeight.bold,
-                                color: Colors.white),
+                            style: GoogleFonts.crimsonText(
+                             //   fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                 fontSize:14
+                                ),
+                               
                           ),
                         ),
                         SizedBox(height: 5),
@@ -253,7 +260,7 @@ class Display extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
                           child: Text("1 Day Ago",
                               style:
-                                  TextStyle(color: Colors.grey, fontSize: 10)),
+                                  GoogleFonts.crimsonText(color: Colors.grey, fontSize: 12)),
                         ),
                         new SizedBox(
                           height: 10.0,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:saksham/aboutus/about.dart';
 import 'package:saksham/home/drawer.dart';
 import 'package:saksham/news/news.dart';
@@ -68,7 +69,7 @@ class DrawerExampleState extends State<DrawerExample> {
                   top: MediaQuery.of(context).size.width / 20),
               child: Text(
                 title,
-                style: TextStyle(fontSize: 22),
+                style: GoogleFonts.crimsonText(fontSize: 26),
               )),
           shape: MyShapeBorder(20),
           backgroundColor: Color.fromRGBO(128, 0, 0, 1),
