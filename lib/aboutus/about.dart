@@ -113,8 +113,8 @@ class AboutUs extends StatelessWidget {
                       height: 20,
                     ),
                     Container(
-                  height: MediaQuery.of(context).size.height -452,
-                      width: MediaQuery.of(context).size.width - 50,
+                  height: 287,
+                      width: 500,
                       child: ListView.builder(
                         itemCount: committee.length,
                         scrollDirection: Axis.horizontal,
@@ -122,8 +122,8 @@ class AboutUs extends StatelessWidget {
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
                           child: Container(
-                              width: MediaQuery.of(context).size.width - 190,
-                              height: MediaQuery.of(context).size.height - 630,
+                              width: 200,
+                              height: 287,
                               child: FlipCard(
                                   front: Card(
                                       elevation: 5,
@@ -143,8 +143,8 @@ class AboutUs extends StatelessWidget {
                                             CrossAxisAlignment.stretch,
                                         children: <Widget>[
                                           Container(
-                                             width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                             width:  200,
+                              height: 208,
                                             child: Image.asset(
                                               committee[index].img,
                                               fit: BoxFit.fill,
@@ -202,8 +202,8 @@ class AboutUs extends StatelessWidget {
                                             CrossAxisAlignment.stretch,
                                         children: <Widget>[
                                           Container(
-                                            width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                            width:  200,
+                              height: 208,
                                             child: Image.asset(
                                               
                                                committee[index].img,
@@ -261,8 +261,8 @@ class AboutUs extends StatelessWidget {
                     ),
                     SizedBox(height:20),
                     Container(
-                      height: MediaQuery.of(context).size.height -452,
-                      width: MediaQuery.of(context).size.width - 50,
+                      height: 287,
+                      width: 500,
                       child: ListView.builder(
                         itemCount: developer.length,
                         scrollDirection: Axis.horizontal,
@@ -270,8 +270,8 @@ class AboutUs extends StatelessWidget {
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
                           child: Container(
-                              width: MediaQuery.of(context).size.width - 190,
-                              height: MediaQuery.of(context).size.height - 630,
+                              width: 200,
+                              height: 287,
                               child: FlipCard(
                                   front: Card(
                                       elevation: 5,
@@ -291,11 +291,11 @@ class AboutUs extends StatelessWidget {
                                             CrossAxisAlignment.stretch,
                                         children: <Widget>[
                                           Container(
-                                            width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                            width: 200,
+                              height: 208,
                                             child: Container(
-                                              width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                              width:200,
+                              height:208,
                                               child: Image.asset(
                                                 developer[index].img,
                                                 fit: BoxFit.fill,
@@ -354,11 +354,11 @@ class AboutUs extends StatelessWidget {
                                             CrossAxisAlignment.stretch,
                                         children: <Widget>[
                                           Container(
-                                            width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                            width:  200,
+                              height: 208,
                                             child: Container(
-                                              width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height -530,
+                                              width:  200,
+                              height: 280,
                                               child: Image.asset(
                                                  developer[index].img,
                                                 fit: BoxFit.fill,
