@@ -227,6 +227,7 @@ class Display extends StatelessWidget {
                           child: new Image.asset(
                             values[index].image,
                             fit: BoxFit.fill,
+                            
                           ),
                         ),
                         SizedBox(height: 10),
