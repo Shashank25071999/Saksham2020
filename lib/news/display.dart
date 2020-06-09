@@ -226,7 +226,7 @@ class Display extends StatelessWidget {
                           height: MediaQuery.of(context).size.height - 450,
                           child: new Image.asset(
                             values[index].image,
-                            fit: BoxFit.cover,
+                            fit: BoxFit.fill,
                           ),
                         ),
                         SizedBox(height: 10),

@@ -207,7 +207,7 @@ class AboutUs extends StatelessWidget {
                                             child: Image.asset(
                                               
                                                committee[index].img,
-                                              fit: BoxFit.cover,
+                                              fit: BoxFit.fill,
                                             ),
                                           ),
                                           Container(
@@ -298,7 +298,7 @@ class AboutUs extends StatelessWidget {
                               height: MediaQuery.of(context).size.height -530,
                                               child: Image.asset(
                                                 developer[index].img,
-                                                fit: BoxFit.cover,
+                                                fit: BoxFit.fill,
                                               ),
                                             ),
                                           ),
@@ -361,7 +361,7 @@ class AboutUs extends StatelessWidget {
                               height: MediaQuery.of(context).size.height -530,
                                               child: Image.asset(
                                                  developer[index].img,
-                                                fit: BoxFit.cover,
+                                                fit: BoxFit.fill,
                                               ),
                                             ),
                                           ),
