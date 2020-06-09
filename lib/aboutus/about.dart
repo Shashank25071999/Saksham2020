@@ -85,10 +85,10 @@ class AboutUs extends StatelessWidget {
                       height: 30,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 13.0),
                       child: Container(
                         child: Text(
-                          "Inter Departmental Sports Events are back,and it promises to be bigger and more extravagant than ever! The annualintra college sports meet, spanning accross several days commences with the Opening Ceremony and would comprise competitive events across 15 disciplines namely Cricket, Football, Basketball, Kabaddi, Table Tennis, Athletics, Badminton, Powerlifting, Carrom, Chess, Tug of War, Pool, Kho Kho, Volleyball and Obstacle Race. The wide assortment of indoor and outdoor events that Sports Meet to showcase their talents in various sports and instils the message to rise above our limits and achieve the improbable. It includes the feeling of righteousness, prudence and brotherhood and reinstates the fact that Ajay Kumar Garg Engineering College shapes up its students to achieve excellence in all spheres of life. So the seven contigents CSE, IT, EC, ME,EN, CE+EI and MBA+MCA are all ready in this rip-roaring competition to achieve the final victory. Are you?",
+                          "Inter Departmental Sports Events are back, and it promises to be bigger and more extravagant than ever! The annualintra college sports meet, spanning accross several days commences with the Opening Ceremony and would comprise competitive events across 15 disciplines namely Cricket, Football, Basketball, Kabaddi, Table Tennis, Athletics, Badminton, Powerlifting, Carrom, Chess, Tug of War, Pool, Kho Kho, Volleyball and Obstacle Race. The wide assortment of indoor and outdoor events that Sports Meet to showcase their talents in various sports and instils the message to rise above our limits and achieve the improbable. It includes the feeling of righteousness, prudence and brotherhood and reinstates the fact that Ajay Kumar Garg Engineering College shapes up its students to achieve excellence in all spheres of life. So the seven contigents CSE, IT, EC, ME,EN, CE+EI and MBA+MCA are all ready in this rip-roaring competition to achieve the final victory. Are you?",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.crimsonText(
                               color: Colors.white, fontSize: 17),
@@ -113,7 +113,7 @@ class AboutUs extends StatelessWidget {
                       height: 20,
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.height - 425,
+                  height: MediaQuery.of(context).size.height -452,
                       width: MediaQuery.of(context).size.width - 50,
                       child: ListView.builder(
                         itemCount: committee.length,
@@ -122,8 +122,8 @@ class AboutUs extends StatelessWidget {
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
                           child: Container(
-                              width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height - 605,
+                              width: MediaQuery.of(context).size.width - 190,
+                              height: MediaQuery.of(context).size.height - 630,
                               child: FlipCard(
                                   front: Card(
                                       elevation: 5,
@@ -247,7 +247,7 @@ class AboutUs extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height:20),
+                    SizedBox(height:30),
                       Padding(
                       padding: EdgeInsets.all(5),
                       child: Center(
@@ -261,7 +261,7 @@ class AboutUs extends StatelessWidget {
                     ),
                     SizedBox(height:20),
                     Container(
-                      height: MediaQuery.of(context).size.height - 425,
+                      height: MediaQuery.of(context).size.height -452,
                       width: MediaQuery.of(context).size.width - 50,
                       child: ListView.builder(
                         itemCount: developer.length,
@@ -270,8 +270,8 @@ class AboutUs extends StatelessWidget {
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
                           child: Container(
-                              width: MediaQuery.of(context).size.width - 200,
-                              height: MediaQuery.of(context).size.height - 605,
+                              width: MediaQuery.of(context).size.width - 190,
+                              height: MediaQuery.of(context).size.height - 630,
                               child: FlipCard(
                                   front: Card(
                                       elevation: 5,
