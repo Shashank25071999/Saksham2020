@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:saksham/home/curved.dart';
-
+import'package:flutter/services.dart';
 void main() {
 //   List<DrawerItem>items=[DrawerItem(icon: Icon(Icons.home),label: "Riya Garg"),
 //  DrawerItem(icon: Icon(Icons.hot_tub),label: "Shashank"),
 //  DrawerItem(icon: Icon(Icons.hotel),label: "Anshul Sahai"),
 //  DrawerItem(icon: Icon(Icons.http),label: "Appu Garg"),
 //  DrawerItem(icon: Icon(Icons.image),label: "Nautanki sala")];
-  runApp(MaterialApp(
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+    .then((_) {
+      runApp(MaterialApp(
     home: DrawerExample(2, 'Home'),
     debugShowCheckedModeBanner: false,
   ));
+    });
 }
 
 // List<DrawerItem> listpages = [
