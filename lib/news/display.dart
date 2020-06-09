@@ -218,16 +218,19 @@ class Display extends StatelessWidget {
                         //     )
                         //   )
                         // ),
-                        Container(
+                 //       Container(
                           // fit: FlexFit.loose,
-                          width: 300,
-                          height: 280,
-                          child: new Image.asset(
-                            values[index].image,
-                            fit: BoxFit.fill,
-                            
+                        //  width: 300,
+                       //   height: 280,
+                        //  child: 
+                          AspectRatio(
+                                                      child: new Image.asset(
+                              values[index].image,
+                              fit: BoxFit.fill,
+                              
+                            ), aspectRatio: 23/17,
                           ),
-                        ),
+                      //  ),
                         SizedBox(height: 10),
                         Padding(
                           padding: const EdgeInsets.all(10),

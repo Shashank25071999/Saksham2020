@@ -112,140 +112,133 @@ class AboutUs extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    Container(
-                  height: 287,
-                      width: 500,
-                      child: ListView.builder(
+                    AspectRatio(
+                                          child: ListView.builder(
                         itemCount: committee.length,
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
-                          child: Container(
-                              width: 200,
-                              height: 287,
-                              child: FlipCard(
-                                  front: Card(
-                                      elevation: 5,
-                                      color: Colors.black,
-                                      margin: EdgeInsets.all(8.0),
-                                      shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                            color: Colors.black, width: 2),
-                                        borderRadius: BorderRadius.circular(20),
-                                      ),
-                                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.stretch,
-                                        children: <Widget>[
-                                          Container(
-                                             width:  200,
-                              height: 208,
-                                            child: Image.asset(
-                                              committee[index].img,
-                                              fit: BoxFit.fill,
+                          child: AspectRatio(
+                                                      child: FlipCard(
+                                front: Card(
+                                    elevation: 5,
+                                    color: Colors.black,
+                                    margin: EdgeInsets.all(8.0),
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                          color: Colors.black, width: 2),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: <Widget>[
+                                        AspectRatio(
+                                                                                  child: Image.asset(
+                                            committee[index].img,
+                                            fit: BoxFit.fill,
+                                          ), aspectRatio: 60/70,
+                                        ),
+                                        Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(20),
+                                                  bottomRight:
+                                                      Radius.circular(20)),
                                             ),
-                                          ),
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.only(
-                                                    bottomLeft:
-                                                        Radius.circular(20),
-                                                    bottomRight:
-                                                        Radius.circular(20)),
-                                              ),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Center(
-                                                    child: Column(
-                                                  children: <Widget>[
-                                                    Text(
-                                                      committee[index].name,
-                                                      style: TextStyle(
-                                                          fontSize: 14,
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                    ),
-                                                    Text(
-                                                       committee[index].role,
-                                                      style: TextStyle(
-                                                          fontSize: 12,
-                                                          color: Colors.black),
-                                                    ),
-                                                  ],
-                                                )),
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: Center(
+                                                  child: Column(
+                                                children: <Widget>[
+                                                  Text(
+                                                    committee[index].name,
+                                                    style: TextStyle(
+                                                        fontSize: 14,
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  Text(
+                                                     committee[index].role,
+                                                    style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black),
+                                                  ),
+                                                ],
                                               )),
-                                        ],
-                                      )),
-                                  back: Card(
-                                      elevation: 5,
-                                      color: Colors.black,
-                                      margin: EdgeInsets.all(8.0),
-                                      shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                            color: Colors.black, width: 2),
-                                        borderRadius: BorderRadius.circular(20),
-                                      ),
-                                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.stretch,
-                                        children: <Widget>[
-                                          Container(
-                                            width:  200,
-                              height: 208,
-                                            child: Image.asset(
-                                              
-                                               committee[index].img,
-                                              fit: BoxFit.fill,
+                                            )),
+                                      ],
+                                    )),
+                                back: Card(
+                                    elevation: 5,
+                                    color: Colors.black,
+                                    margin: EdgeInsets.all(8.0),
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                          color: Colors.black, width: 2),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: <Widget>[
+                                        AspectRatio(
+                                                                                  child: Image.asset(
+                                            
+                                             committee[index].img,
+                                            fit: BoxFit.fill,
+                                          ), aspectRatio: 60/70,
+                                        ),
+                                        Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(20),
+                                                  bottomRight:
+                                                      Radius.circular(20)),
                                             ),
-                                          ),
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.only(
-                                                    bottomLeft:
-                                                        Radius.circular(20),
-                                                    bottomRight:
-                                                        Radius.circular(20)),
-                                              ),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Center(
-                                                    child: Column(
-                                                  children: <Widget>[
-                                                    Text(
-                                                       committee[index].name,
-                                                      style: TextStyle(
-                                                          fontSize: 14,
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                    ),
-                                                    Text(
-                                                       committee[index].branch,
-                                                      style: TextStyle(
-                                                          fontSize: 12,
-                                                          color: Colors.black),
-                                                    ),
-                                                  ],
-                                                )),
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: Center(
+                                                  child: Column(
+                                                children: <Widget>[
+                                                  Text(
+                                                     committee[index].name,
+                                                    style: TextStyle(
+                                                        fontSize: 14,
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  Text(
+                                                     committee[index].branch,
+                                                    style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black),
+                                                  ),
+                                                ],
                                               )),
-                                        ],
-                                      )))),
+                                            )),
+                                      ],
+                                    ))), aspectRatio: 35/50,
+                          ),
                         ),
-                      ),
+                      ), aspectRatio: 37/30,
                     ),
                     SizedBox(height:30),
                       Padding(
@@ -260,147 +253,136 @@ class AboutUs extends StatelessWidget {
                       )),
                     ),
                     SizedBox(height:20),
-                    Container(
-                      height: 287,
-                      width: 500,
-                      child: ListView.builder(
+                    AspectRatio(
+                                          child: ListView.builder(
                         itemCount: developer.length,
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
                         itemBuilder: (context, index) => Padding(
                           padding: EdgeInsets.all(5),
-                          child: Container(
-                              width: 200,
-                              height: 287,
-                              child: FlipCard(
-                                  front: Card(
-                                      elevation: 5,
-                                      color: Colors.black,
-                                      margin: EdgeInsets.all(8.0),
-                                      shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                            color: Colors.black, width: 2),
-                                        borderRadius: BorderRadius.circular(20),
-                                      ),
-                                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.stretch,
-                                        children: <Widget>[
-                                          Container(
-                                            width: 200,
-                              height: 208,
-                                            child: Container(
-                                              width:200,
-                              height:208,
+                          child: AspectRatio(
+                                                      child: FlipCard(
+                                front: Card(
+                                    elevation: 5,
+                                    color: Colors.black,
+                                    margin: EdgeInsets.all(8.0),
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                          color: Colors.black, width: 2),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: <Widget>[
+                                       
+                                           AspectRatio(
+                                                                                        child: Image.asset(
+                                               developer[index].img,
+                                               fit: BoxFit.fill,
+                                             ), aspectRatio: 60/70,
+                                           ),
+                                        
+                                        Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(20),
+                                                  bottomRight:
+                                                      Radius.circular(20)),
+                                            ),
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: Center(
+                                                  child: Column(
+                                                children: <Widget>[
+                                                  Text(
+                                                    developer[index].name,
+                                                    style: TextStyle(
+                                                        fontSize: 14,
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  Text(
+                                                     developer[index].role,
+                                                    style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.black),
+                                                  ),
+                                                ],
+                                              )),
+                                            )),
+                                      ],
+                                    )),
+                                back: Card(
+                                    elevation: 5,
+                                    color: Colors.black,
+                                    margin: EdgeInsets.all(8.0),
+                                    shape: RoundedRectangleBorder(
+                                      side: BorderSide(
+                                          color: Colors.black, width: 2),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: <Widget>[
+                                     
+                                           AspectRatio(
                                               child: Image.asset(
                                                 developer[index].img,
-                                                fit: BoxFit.fill,
-                                              ),
+                                               fit: BoxFit.fill,
+                                             ), aspectRatio: 60/70,
+                                           ),
+                                        
+                                        Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(20),
+                                                  bottomRight:
+                                                      Radius.circular(20)),
                                             ),
-                                          ),
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.only(
-                                                    bottomLeft:
-                                                        Radius.circular(20),
-                                                    bottomRight:
-                                                        Radius.circular(20)),
-                                              ),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Center(
-                                                    child: Column(
-                                                  children: <Widget>[
-                                                    Text(
-                                                      developer[index].name,
-                                                      style: TextStyle(
-                                                          fontSize: 14,
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                    ),
-                                                    Text(
-                                                       developer[index].role,
-                                                      style: TextStyle(
-                                                          fontSize: 12,
-                                                          color: Colors.black),
-                                                    ),
-                                                  ],
-                                                )),
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: Center(
+                                                  child: Column(
+                                                children: <Widget>[
+                                                  Text(
+                                                     developer[index].name,
+                                                    style: TextStyle(
+                                                        fontSize: 14,
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                  Text(
+                                                   developer[index].branch,
+                                                    style: TextStyle(
+                                                        fontSize: 12,
+                                                     color: Colors.black),
+                                                  ),
+                                                ],
                                               )),
-                                        ],
-                                      )),
-                                  back: Card(
-                                      elevation: 5,
-                                      color: Colors.black,
-                                      margin: EdgeInsets.all(8.0),
-                                      shape: RoundedRectangleBorder(
-                                        side: BorderSide(
-                                            color: Colors.black, width: 2),
-                                        borderRadius: BorderRadius.circular(20),
-                                      ),
-                                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        mainAxisSize: MainAxisSize.min,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.stretch,
-                                        children: <Widget>[
-                                          Container(
-                                            width:  200,
-                              height: 208,
-                                            child: Container(
-                                              width:  200,
-                              height: 280,
-                                              child: Image.asset(
-                                                 developer[index].img,
-                                                fit: BoxFit.fill,
-                                              ),
-                                            ),
-                                          ),
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.only(
-                                                    bottomLeft:
-                                                        Radius.circular(20),
-                                                    bottomRight:
-                                                        Radius.circular(20)),
-                                              ),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Center(
-                                                    child: Column(
-                                                  children: <Widget>[
-                                                    Text(
-                                                       developer[index].name,
-                                                      style: TextStyle(
-                                                          fontSize: 14,
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                    ),
-                                                    Text(
-                                                     developer[index].branch,
-                                                      style: TextStyle(
-                                                          fontSize: 12,
-                                                       color: Colors.black),
-                                                    ),
-                                                  ],
-                                                )),
-                                              )),
-                                        ],
-                                      )))),
+                                            )),
+                                      ],
+                                    ))), aspectRatio: 35/50,
+                          ),
                         ),
-                      ),
+                      ), aspectRatio: 37/30,
                     ),
                     SizedBox(height:5)
                   ],
