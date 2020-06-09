@@ -87,8 +87,8 @@ class Display extends StatelessWidget {
                             Animation animation, Animation secondaryAnimation) {
                           return Center(
                             child: Container(
-                              width: MediaQuery.of(context).size.width - 50,
-                              height: MediaQuery.of(context).size.height - 220,
+                              width: 350,
+                              height: 515,
                               //padding: EdgeInsets.all(20),
                               color: Colors.white,
                               child: SingleChildScrollView(
@@ -96,10 +96,8 @@ class Display extends StatelessWidget {
                                   children: [
                                     Container(
                                       height:
-                                          MediaQuery.of(context).size.height -
-                                              450,
-                                      width: MediaQuery.of(context).size.width -
-                                          50,
+                                          285,
+                                      width:350,
                                       child: Image.asset(
                                         values[index].image,
                                         fit: BoxFit.fill,
@@ -222,8 +220,8 @@ class Display extends StatelessWidget {
                         // ),
                         Container(
                           // fit: FlexFit.loose,
-                          width: MediaQuery.of(context).size.width - 50,
-                          height: MediaQuery.of(context).size.height - 450,
+                          width: 300,
+                          height: 280,
                           child: new Image.asset(
                             values[index].image,
                             fit: BoxFit.fill,
