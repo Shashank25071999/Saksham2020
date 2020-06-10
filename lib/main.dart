@@ -12,11 +12,27 @@ void main() {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
     .then((_) {
       runApp(MaterialApp(
-    home: DrawerExample(2, 'Home'),
-    debugShowCheckedModeBanner: false,
-  ));
-    });
+         builder: (context, child) {
+    return ScrollConfiguration(
+      behavior: MyBehavior(),
+            child: child,
+          );
+        },
+          home: DrawerExample(2, 'Home'),
+          debugShowCheckedModeBanner: false,
+        ));
+          });
+      }
+      
+     
+        class MyBehavior extends ScrollBehavior {
+  @override
+  Widget buildViewportChrome(
+      BuildContext context, Widget child, AxisDirection axisDirection) {
+    return child;
+  }
 }
+
 
 // List<DrawerItem> listpages = [
 
