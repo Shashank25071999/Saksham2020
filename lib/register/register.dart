@@ -150,14 +150,14 @@ class _Register extends State<Register> {
               ),
             ),
             SizedBox(
-              height: 5,
+              height: 10,
             ),
             Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Padding(
                       child: Container(
-                        height: MediaQuery.of(context).size.height - 688,
+                        height: 50,
                         width: MediaQuery.of(context).size.width - 240,
                         child: GestureDetector(
                           onTap: () {
@@ -199,7 +199,7 @@ class _Register extends State<Register> {
                       padding: EdgeInsets.all(10)),
                   Padding(
                     child: Container(
-                      height: MediaQuery.of(context).size.height - 688,
+                      height: 50,
                       width: MediaQuery.of(context).size.width - 240,
                       child: GestureDetector(
                         onTap: () {
@@ -365,7 +365,7 @@ class _Register extends State<Register> {
                 children: <Widget>[
                   Padding(
                       child: Container(
-                        height: MediaQuery.of(context).size.height - 688,
+                        height:50,
                         width: MediaQuery.of(context).size.width - 240,
                         child: GestureDetector(
                           onTap: () {
@@ -408,7 +408,7 @@ class _Register extends State<Register> {
                       padding: EdgeInsets.all(10)),
                   Padding(
                     child: Container(
-                      height: MediaQuery.of(context).size.height - 688,
+                      height: 50,
                       width: MediaQuery.of(context).size.width - 240,
                       child: GestureDetector(
                         onTap: () {
@@ -448,11 +448,11 @@ class _Register extends State<Register> {
                     padding: EdgeInsets.all(10),
                   )
                 ]),
-            SizedBox(height: 10),
+            SizedBox(height: 15),
             Padding(
                 padding: EdgeInsets.all(7),
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Transform(
                         transform: new Matrix4.identity()..scale(1.0),
@@ -466,9 +466,13 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Athletics ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Athletics     ',
+                                overflow: TextOverflow.ellipsis,
+                                
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -494,9 +498,12 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Chess     ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Chess          ',
+                                overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -529,9 +536,12 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Badminton    ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Badminton    ',
+                                overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -542,7 +552,7 @@ class _Register extends State<Register> {
             Padding(
                 padding: EdgeInsets.all(7),
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Transform(
                         transform: new Matrix4.identity()..scale(1.0),
@@ -563,9 +573,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Volleyball  ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Volleyball   ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -591,9 +603,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Carrom    ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Carrom       ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -619,9 +633,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Table Tennis ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Table Tennis ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -632,7 +648,7 @@ class _Register extends State<Register> {
             Padding(
                 padding: EdgeInsets.all(7),
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Transform(
                         transform: new Matrix4.identity()..scale(1.0),
@@ -653,9 +669,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Basketball',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Basketball   ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -681,9 +699,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Tug of War',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Tug of War ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -709,9 +729,11 @@ class _Register extends State<Register> {
                                   color: Colors.white,
                                 ),
                               )),
-                          label: Text(
-                            'Kho Kho      ',
-                            style: GoogleFonts.crimsonText(color: Colors.black),
+                          label: Center(
+                            child: Text(
+                              'Kho Kho        ',
+                              style: GoogleFonts.crimsonText(color: Colors.black),
+                            ),
                           ),
                           backgroundColor: Colors.white,
                           labelPadding: EdgeInsets.all(3),
@@ -726,7 +748,7 @@ class _Register extends State<Register> {
                 : Padding(
                     padding: EdgeInsets.all(7),
                     child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Transform(
                             transform: new Matrix4.identity()..scale(1.0),
@@ -748,10 +770,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Cricket   ',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Cricket       ',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -777,10 +801,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Kabaddi   ',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Kabaddi      ',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -806,10 +832,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Power Lifting',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Power Lifting',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -824,7 +852,7 @@ class _Register extends State<Register> {
                 : Padding(
                     padding: EdgeInsets.all(7),
                     child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Transform(
                             transform: new Matrix4.identity()..scale(1.0),
@@ -845,10 +873,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Football  ',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Football     ',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -874,10 +904,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Pool      ',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Pool             ',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -903,10 +935,12 @@ class _Register extends State<Register> {
                                       color: Colors.white,
                                     ),
                                   )),
-                              label: Text(
-                                'Obstacle Race',
-                                style: GoogleFonts.crimsonText(
-                                    color: Colors.black),
+                              label: Center(
+                                child: Text(
+                                  'Obstacle Race',
+                                  style: GoogleFonts.crimsonText(
+                                      color: Colors.black),
+                                ),
                               ),
                               backgroundColor: Colors.white,
                               labelPadding: EdgeInsets.all(3),
@@ -914,9 +948,10 @@ class _Register extends State<Register> {
                             ),
                           ),
                         ])),
+                        SizedBox(height:10),
             Padding(
                 child: Container(
-                  height: MediaQuery.of(context).size.height - 688,
+                  height: 50,
                   width: MediaQuery.of(context).size.width - 50,
                   child: GestureDetector(
                     onTap: () {
